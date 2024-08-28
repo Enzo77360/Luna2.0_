@@ -32,15 +32,15 @@ Le dataset nécessaire pour entraîner le modèle d'IA est généré en variant 
 ## Modélisation avec les LSTM
 
 La première approche a consisté à utiliser des réseaux de neurones récurrents de type **LSTM** pour prédire l'évolution du spectre à chaque étape de la propagation. Bien que cette méthode ait montré des résultats intéressants, elle présente des limitations importantes en termes de divergence des prédictions au fil des étapes.
-![Résultats du Modèle LSTM](./Capture d’écran 2024-08-16 à 09.33.21.png)
+![Résultats du Modèle LSTM](./img4.png)
 
 ## Modélisation avec les Réseaux de Neurones Convolutifs (ConvNet)
 
 Une seconde approche plus robuste a été mise en œuvre avec un réseau de neurones convolutif (**ConvNet**), visant à reproduire les équations de Schrödinger en utilisant les spectres d'entrée et les paramètres conditionnels. Cette méthode a donné des résultats très satisfaisants, avec une erreur moyenne de l'ordre de 6% sur chaque spectre simulé.
 
-![Résultats ConvNet - Image 1](./Capture d’écran 2024-08-16 à 09.32.54.png)
-![Résultats ConvNet - Image 2](./Capture d’écran 2024-08-16 à 09.33.07.png)
-![Résultats ConvNet - Image 3](./Capture d’écran 2024-08-16 à 09.33.42.png)
+![Résultats ConvNet - Image 1](./img1.png)
+![Résultats ConvNet - Image 2](./imgg2.png)
+![Résultats ConvNet - Image 3](./img3.png)
 
 ### Architecture du Modèle ConvNet :
 - **Nombre de caractéristiques** : 4097
