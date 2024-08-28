@@ -39,7 +39,7 @@ La première approche a consisté à utiliser des réseaux de neurones récurren
 Une seconde approche plus robuste a été mise en œuvre avec un réseau de neurones convolutif (**ConvNet**), visant à reproduire les équations de Schrödinger en utilisant les spectres d'entrée et les paramètres conditionnels. Cette méthode a donné des résultats très satisfaisants, avec une erreur moyenne de l'ordre de 6% sur chaque spectre simulé.
 
 ![Résultats ConvNet - Image 1](./img1.png)
-![Résultats ConvNet - Image 2](./imgg2.png)
+![Résultats ConvNet - Image 2](./img2.png)
 ![Résultats ConvNet - Image 3](./img3.png)
 
 ### Architecture du Modèle ConvNet :
