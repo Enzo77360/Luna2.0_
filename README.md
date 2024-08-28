@@ -8,7 +8,7 @@ Ce projet vise à explorer et améliorer les capacités de modélisation des dyn
 
 [Luna](https://github.com/LupoLab/Luna.jl) est une bibliothèque puissante écrite en **Julia**. Elle permet de simuler les dynamiques optiques non linéaires, notamment à travers l'équation de propagation des impulsions unidirectionnelle (UPPE) et l'équation de Schrödinger non linéaire généralisée (GNLSE). Bien que Luna soit codée en Julia pour des raisons de performance, ce projet exploite également Python pour le traitement des données générées.
 
-![Simulation avec Luna](./ReadmeJulia.png)
+![Simulation avec Luna](./images/ReadmeJulia.png)
 
 
 ## Problématique
@@ -32,15 +32,15 @@ Le dataset nécessaire pour entraîner le modèle d'IA est généré en variant 
 ## Modélisation avec les LSTM
 
 La première approche a consisté à utiliser des réseaux de neurones récurrents de type **LSTM** pour prédire l'évolution du spectre à chaque étape de la propagation. Bien que cette méthode ait montré des résultats intéressants, elle présente des limitations importantes en termes de divergence des prédictions au fil des étapes.
-![Résultats du Modèle LSTM](./img4.png)
+![Résultats du Modèle LSTM](./images/img4.png)
 
 ## Modélisation avec les Réseaux de Neurones Convolutifs (ConvNet)
 
 Une seconde approche plus robuste a été mise en œuvre avec un réseau de neurones convolutif (**ConvNet**), visant à reproduire les équations de Schrödinger en utilisant les spectres d'entrée et les paramètres conditionnels. Cette méthode a donné des résultats très satisfaisants, avec une erreur moyenne de l'ordre de 6% sur chaque spectre simulé.
 
-![Résultats ConvNet - Image 1](./img1.png)
-![Résultats ConvNet - Image 2](./img2.png)
-![Résultats ConvNet - Image 3](./img3.png)
+![Résultats ConvNet - Image 1](./images/img1.png)
+![Résultats ConvNet - Image 2](./images/img2.png)
+![Résultats ConvNet - Image 3](./images/img3.png)
 
 ### Architecture du Modèle ConvNet :
 - **Nombre de caractéristiques** : 4097
