@@ -8,6 +8,9 @@ Ce projet vise à explorer et améliorer les capacités de modélisation des dyn
 
 [Luna](https://github.com/LupoLab/Luna.jl) est une bibliothèque puissante écrite en **Julia**. Elle permet de simuler les dynamiques optiques non linéaires, notamment à travers l'équation de propagation des impulsions unidirectionnelle (UPPE) et l'équation de Schrödinger non linéaire généralisée (GNLSE). Bien que Luna soit codée en Julia pour des raisons de performance, ce projet exploite également Python pour le traitement des données générées.
 
+![Simulation avec Luna](./ReadmeJulia.png)
+
+
 ## Problématique
 
 Le temps de calcul nécessaire pour simuler la propagation d'impulsions ultrarapides dans une fibre est significatif. L'une des solutions envisagées est l'implémentation d'un modèle d'IA, capable de prédire presque instantanément la forme de l'impulsion à chaque étape de la propagation, réduisant ainsi la nécessité de résoudre l'UPPE à chaque étape.
@@ -29,6 +32,7 @@ Le dataset nécessaire pour entraîner le modèle d'IA est généré en variant 
 ## Modélisation avec les LSTM
 
 La première approche a consisté à utiliser des réseaux de neurones récurrents de type **LSTM** pour prédire l'évolution du spectre à chaque étape de la propagation. Bien que cette méthode ait montré des résultats intéressants, elle présente des limitations importantes en termes de divergence des prédictions au fil des étapes.
+![Résultats du Modèle LSTM](./images/simulation_lstm.png)
 
 ## Modélisation avec les Réseaux de Neurones Convolutifs (ConvNet)
 
